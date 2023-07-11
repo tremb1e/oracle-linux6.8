@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libtse
+Description: Tse library
+Version: 82
+Cflags: -I${includedir} 
+Libs: -lkeyutils -L${libdir} -ltse

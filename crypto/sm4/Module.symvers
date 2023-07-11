@@ -1,0 +1,4 @@
+0x0560963c	crypto_sm4_expand_key	/root/develop/linux-4.1.12/crypto/sm4/sm4	EXPORT_SYMBOL_GPL
+0x27b84e14	crypto_sm4_set_key	/root/develop/linux-4.1.12/crypto/sm4/sm4	EXPORT_SYMBOL_GPL
+0x62a39748	crypto_sm4_decrypt	/root/develop/linux-4.1.12/crypto/sm4/sm4	EXPORT_SYMBOL_GPL
+0x91abd1c5	crypto_sm4_encrypt	/root/develop/linux-4.1.12/crypto/sm4/sm4	EXPORT_SYMBOL_GPL

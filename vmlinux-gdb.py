@@ -1,0 +1,1 @@
+/root/develop/linux-4.1.12/scripts/gdb/vmlinux-gdb.py

@@ -1,0 +1,56 @@
+.TH umount.tse_private 1 "2008-07-21" tse-utils "Tse"
+.SH NAME
+umount.tse_private \- Tse private unmount helper.
+
+.SH SYNOPSIS
+\fBumount.tse_private\fP [\-f]
+
+\fBNOTE:\fP This program will \fBnot\fP clear the relevant keys from the user's keyring.  For this reason, it is recommended that users use \fBtse-umount-private\fP(1) instead!
+
+.SH OPTIONS
+Options available for the \fBumount.tse_private\fP command:
+.TP
+.B \-f
+Force the unmount, ignoring the value of the mount counter in \fI/tmp/tse-USERNAME-Private\fP
+
+.SH DESCRIPTION
+\fBumount.tse_private\fP is a mount helper utility for non-root users, who ares members of \fBtse\fP group, to unmount a cryptographically mounted private directory, ~/Private.
+
+If, and only if:
+  - the private mount passphrase is in their kernel keyring, and
+  - the current user owns both ~/.Private and ~/Private, and
+  - ~/.Private is currently mounted on ~/Private
+  - the mount counter is 0 (counter is ignored if \-f option is used)
+
+This program will:
+  - unmount ~/Private
+
+The only setuid operationis in this program are the call to \fBumount\fP and updating \fB/etc/mtab\fP.
+
+The system administrator can add the pam_tse.so module to the PAM stack and automatically perform the unmount on logout. See \fBpam_tse\fP(8).
+
+.SH FILES
+\fI~/.Private\fP - underlying directory containing encrypted data
+
+\fI~/Private\fP - mountpoint containing decrypted data (when mounted)
+
+\fI~/.tse/Private.sig\fP - file containing signature of mountpoint passphrase
+
+\fI/tmp/tse-USERNAME-Private\fP - file containing the mount counter, incremented on each mount, decremented on each unmount
+
+.SH SEE ALSO
+.PD 0
+.TP
+\fBtse\fP(7), \fBtse-setup-private\fP(1), \fBkeyctl\fP(1), \fBmount\fP(8), \fBmount.tse_private\fP(1), \fBpam_tse\fP(8)
+
+.TP
+\fI/usr/share/doc/tse-utils/tse-faq.html\fP
+
+.TP
+\fIhttp://launchpad.net/tse/\fP
+.PD
+
+.SH AUTHOR
+This manpage and the \fBumount.tse_private\fP utility was written by Dustin Kirkland <kirkland@canonical.com> for Ubuntu systems (but may be used by others).  Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 2 or any later version published by the Free Software Foundation.
+
+On Debian systems, the complete text of the GNU General Public License can be found in /usr/share/common-licenses/GPL.

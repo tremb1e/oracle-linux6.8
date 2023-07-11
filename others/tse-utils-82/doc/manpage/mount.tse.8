@@ -1,0 +1,28 @@
+.TH mount.tse 8 "May 2007" tse-utils "Tse"
+.SH NAME
+mount.tse \- Tse mount helper.
+
+.SH SYNOPSIS
+\fBmount \-t tse\fP [\fIlower\ directory\fP] [\fItse\ mount\ point\fP]
+
+.SH DESCRIPTION
+\fBmount.tse\fP is Tse mount helper. The mount utility will defer to the mount helper to perform various configuration tasks; use the -i option to bypass the mount helper if you would rather manually specify your mount options. To mount Tse, specify the lower directory (i.e., /root/crypt) for the encrypted files and the Tse mountpoint (i.e., /mnt/crypt) for the decrypted view of the files:
+
+\fImount \-t tse /root/crypt /mnt/crypt\fP
+
+.SH "SEE ALSO"
+.PD 0
+.TP
+\fBtse\fP(7), \fBtsed\fP(8), \fBtse-manager\fP(8), \fBmount\fP(8)
+
+.TP
+\fI/usr/share/doc/tse-utils/tse-faq.html\fP
+
+.TP
+\fIhttp://launchpad.net/tse/\fP
+.PD
+
+.SH AUTHOR
+This manpage was written by William Lima <wlima.amadeus@gmail.com> for the Ubuntu system (but may be used by others).  Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 2 or any later version published by the Free Software Foundation.
+
+On Debian systems, the complete text of the GNU General Public License can be found in /usr/share/common-licenses/GPL.

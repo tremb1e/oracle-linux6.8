@@ -1,0 +1,434 @@
+libtse_la-main.lo: main.c ../../config.h /usr/include/errno.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/nss3/nss.h /usr/include/nss3/seccomon.h \
+ /usr/include/nss3/utilrename.h /usr/include/nspr4/prtypes.h \
+ /usr/include/nspr4/prcpucfg.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h \
+ /usr/include/nspr4/obsolete/protypes.h /usr/include/sys/types.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/nss3/secport.h \
+ /usr/include/nspr4/prlink.h /usr/include/nspr4/prtypes.h \
+ /usr/include/ctype.h /usr/include/xlocale.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/nspr4/prlog.h /usr/include/nspr4/plarena.h \
+ /usr/include/nspr4/plarenas.h /usr/include/nspr4/plstr.h \
+ /usr/include/nss3/pk11func.h /usr/include/nss3/pk11pub.h \
+ /usr/include/nss3/secoidt.h /usr/include/nss3/secitem.h \
+ /usr/include/nspr4/plhash.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/nss3/secdert.h \
+ /usr/include/nss3/keyt.h /usr/include/nss3/keythi.h \
+ /usr/include/nss3/pkcs11t.h /usr/include/nss3/pkcs11p.h \
+ /usr/include/nss3/pkcs11n.h /usr/include/nss3/pkcs11u.h \
+ /usr/include/nss3/secmodt.h /usr/include/nss3/nssrwlkt.h \
+ /usr/include/nss3/nssilock.h /usr/include/nspr4/prmon.h \
+ /usr/include/nspr4/prinrval.h /usr/include/nspr4/prlock.h \
+ /usr/include/nspr4/prcvar.h /usr/include/nspr4/prlock.h \
+ /usr/include/nss3/nssilckt.h /usr/include/nss3/secoid.h \
+ /usr/include/nss3/secasn1t.h /usr/include/nss3/secasn1.h \
+ /usr/include/nss3/utilmodt.h /usr/include/nspr4/prclist.h \
+ /usr/include/nss3/certt.h /usr/include/nspr4/prio.h \
+ /usr/include/nspr4/prlong.h /usr/include/nspr4/prtime.h \
+ /usr/include/nspr4/prinet.h /usr/include/sys/socket.h \
+ /usr/include/sys/uio.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
+ /usr/include/netinet/in.h /usr/include/stdint.h \
+ /usr/include/bits/wchar.h /usr/include/bits/in.h \
+ /usr/include/arpa/inet.h /usr/include/netdb.h /usr/include/rpc/netdb.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/netdb.h \
+ /usr/include/nss3/pkcs7t.h /usr/include/nss3/cmsreclist.h \
+ /usr/include/nss3/pk11priv.h /usr/include/mntent.h /usr/include/paths.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/signal.h /usr/include/bits/signum.h \
+ /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+ /usr/include/bits/sigstack.h /usr/include/sys/ucontext.h \
+ /usr/include/bits/sigthread.h /usr/include/sys/mount.h \
+ /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
+ /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h /usr/include/bits/ioctl-types.h \
+ /usr/include/sys/ttydefaults.h /usr/include/keyutils.h \
+ /usr/include/sys/ipc.h /usr/include/bits/ipctypes.h \
+ /usr/include/bits/ipc.h /usr/include/sys/param.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/linux/param.h /usr/include/asm/param.h \
+ /usr/include/asm-generic/param.h /usr/include/sys/shm.h \
+ /usr/include/bits/shm.h /usr/include/sys/sem.h /usr/include/bits/sem.h \
+ ../include/tse.h /usr/include/termios.h /usr/include/bits/termios.h \
+ /usr/include/syslog.h /usr/include/sys/syslog.h \
+ /usr/include/bits/syslog-path.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/setjmp.h /usr/include/linux/types.h \
+ /usr/include/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h /usr/include/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h /usr/include/asm/posix_types.h \
+ /usr/include/asm/posix_types_64.h /usr/include/linux/netlink.h \
+ /usr/include/linux/socket.h
+
+../../config.h:
+
+/usr/include/errno.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/nss3/nss.h:
+
+/usr/include/nss3/seccomon.h:
+
+/usr/include/nss3/utilrename.h:
+
+/usr/include/nspr4/prtypes.h:
+
+/usr/include/nspr4/prcpucfg.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stddef.h:
+
+/usr/include/nspr4/obsolete/protypes.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/nss3/secport.h:
+
+/usr/include/nspr4/prlink.h:
+
+/usr/include/nspr4/prtypes.h:
+
+/usr/include/ctype.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/nspr4/prlog.h:
+
+/usr/include/nspr4/plarena.h:
+
+/usr/include/nspr4/plarenas.h:
+
+/usr/include/nspr4/plstr.h:
+
+/usr/include/nss3/pk11func.h:
+
+/usr/include/nss3/pk11pub.h:
+
+/usr/include/nss3/secoidt.h:
+
+/usr/include/nss3/secitem.h:
+
+/usr/include/nspr4/plhash.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/nss3/secdert.h:
+
+/usr/include/nss3/keyt.h:
+
+/usr/include/nss3/keythi.h:
+
+/usr/include/nss3/pkcs11t.h:
+
+/usr/include/nss3/pkcs11p.h:
+
+/usr/include/nss3/pkcs11n.h:
+
+/usr/include/nss3/pkcs11u.h:
+
+/usr/include/nss3/secmodt.h:
+
+/usr/include/nss3/nssrwlkt.h:
+
+/usr/include/nss3/nssilock.h:
+
+/usr/include/nspr4/prmon.h:
+
+/usr/include/nspr4/prinrval.h:
+
+/usr/include/nspr4/prlock.h:
+
+/usr/include/nspr4/prcvar.h:
+
+/usr/include/nspr4/prlock.h:
+
+/usr/include/nss3/nssilckt.h:
+
+/usr/include/nss3/secoid.h:
+
+/usr/include/nss3/secasn1t.h:
+
+/usr/include/nss3/secasn1.h:
+
+/usr/include/nss3/utilmodt.h:
+
+/usr/include/nspr4/prclist.h:
+
+/usr/include/nss3/certt.h:
+
+/usr/include/nspr4/prio.h:
+
+/usr/include/nspr4/prlong.h:
+
+/usr/include/nspr4/prtime.h:
+
+/usr/include/nspr4/prinet.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/socket.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/netdb.h:
+
+/usr/include/rpc/netdb.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/netdb.h:
+
+/usr/include/nss3/pkcs7t.h:
+
+/usr/include/nss3/cmsreclist.h:
+
+/usr/include/nss3/pk11priv.h:
+
+/usr/include/mntent.h:
+
+/usr/include/paths.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/sys/ucontext.h:
+
+/usr/include/bits/sigthread.h:
+
+/usr/include/sys/mount.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/bits/ioctls.h:
+
+/usr/include/asm/ioctls.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/bits/ioctl-types.h:
+
+/usr/include/sys/ttydefaults.h:
+
+/usr/include/keyutils.h:
+
+/usr/include/sys/ipc.h:
+
+/usr/include/bits/ipctypes.h:
+
+/usr/include/bits/ipc.h:
+
+/usr/include/sys/param.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/linux/param.h:
+
+/usr/include/asm/param.h:
+
+/usr/include/asm-generic/param.h:
+
+/usr/include/sys/shm.h:
+
+/usr/include/bits/shm.h:
+
+/usr/include/sys/sem.h:
+
+/usr/include/bits/sem.h:
+
+../include/tse.h:
+
+/usr/include/termios.h:
+
+/usr/include/bits/termios.h:
+
+/usr/include/syslog.h:
+
+/usr/include/sys/syslog.h:
+
+/usr/include/bits/syslog-path.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/asm/posix_types_64.h:
+
+/usr/include/linux/netlink.h:
+
+/usr/include/linux/socket.h:

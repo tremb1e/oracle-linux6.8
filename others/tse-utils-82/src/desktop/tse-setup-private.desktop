@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Setup Your Encrypted Private Directory
+GenericName=Setup Your Encrypted Private Directory
+Exec=/usr/bin/tse-setup-private
+Terminal=true
+Type=Application
+Categories=Settings;Security;

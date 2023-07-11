@@ -1,0 +1,29 @@
+.TH tse-generate-tpm-key 1 2008-07-21 tse-utils "Tse"
+.SH NAME
+tse-generate-tpm-key \- generate an Tse key for TPM hardware.
+
+.SH SYNOPSIS
+\fBtse-generate-tpm-key \-p PCR \fP [\-p PCR]...
+
+.SH DESCRIPTION
+\fBtse-generate-tpm-key\fP is a utility to generate a sealing (storage) key bound to a specified set of PCRs values in the current TPM's PCR's.
+
+.SH EXAMPLE
+tse-generate-tpm-key \-p 0 \-p 2 \-p 3
+
+.SH SEE ALSO
+.PD 0
+.TP
+\fBtse\fP(7)
+
+.TP
+\fI/usr/share/doc/tse-utils/tse-faq.html\fP
+
+.TP
+\fIhttp://launchpad.net/tse/\fP
+.PD
+
+.SH AUTHOR
+This manpage was written by Dustin Kirkland <kirkland@canonical.com> for Ubuntu systems (but may be used by others).  Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 2 or any later version published by the Free Software Foundation.
+
+On Debian systems, the complete text of the GNU General Public License can be found in /usr/share/common-licenses/GPL.

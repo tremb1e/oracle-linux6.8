@@ -1,0 +1,23 @@
+tse THANKS file
+
+Tse is derived from Cryptfs, which was original written by Erez
+Zadok as part of the FiST framework. Tse is a fork from
+Cryptfs. Mike Halcrow is the principal developer of Tse.
+
+Many people have further contributed to Tse by reporting
+problems, suggesting various improvements, or submitting actual
+code. Here is a list of these people. Help me keep it complete and
+exempt of errors:
+
+Kevin Fenzi
+Steve French
+Tyler Hicks
+Trevor Highland
+Bernard Johnson
+David Kleikamp
+Dmitriy Monakhov
+Theresa Nelson
+Michael C. Thompson
+Peter Vrabec
+George Wilson
+Kent Yoder
